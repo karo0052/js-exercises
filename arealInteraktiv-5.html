@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areal Interaktiv-5</title>
+
+</head>
+
+<body>
+    <script>
+        let laengde = prompt("Angiv en længde");
+        let bredde = prompt("Angiv en bredde");
+        let areal;
+        areal = laengde * bredde;
+
+        if (laengde == null) {
+            alert("Kan ikke regne ud.");
+        } else if (laengde == "") {
+            alert("Kan ikke regne ud.");
+        } else if (bredde == null) {
+            alert("Kan ikke regne ud.");
+        } else if (bredde == "") {
+            alert("Kan ikke regne ud.");
+        } else if (areal != Number(areal)) {
+            alert("Kan ikke regne ud.");
+        } else {
+            alert("Længde: " + laengde + " meter\nBredde: " + bredde + "meter\nAreal: " + areal + "meter");
+        }
+        let forfra = confirm("Vil du starte forfra?");
+        if (forfra) {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>
