@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goddag navne-4</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        let fornavn = prompt("Hvad hedder du til fornavn?");
+        let efternavn = prompt("Hvad hedder du til efternavn?");
+        let navn;
+        navn = fornavn + efternavn;
+        if (navn == 0) {
+            alert("Goddag min ven");
+        } else if (fornavn == null) {
+            alert("Goddag " + efternavn);
+        } else if (efternavn == null) {
+            alert("Goddag " + fornavn);
+        } else {
+            alert("Goddag " + fornavn + " " + efternavn);
+        }
+    </script>
+</body>
+
+</html>
