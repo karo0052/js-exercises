@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi interaktiv-10</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        let hoejde = prompt("Angiv din højde i centimeter");
+        let vaegt = prompt("Angiv din vægt i kilo");
+        const bmi = vaegt / ((hoejde / 100) * (hoejde / 100));
+
+
+
+        if (bmi != Number(bmi)) {
+            alert("Kan ikke regne ud.");
+        } else {
+            alert("BMI'en er " + bmi);
+        }
+
+        let vaegtklasse = confirm("Vil du vide, hvilken vægtklasse du tilhører?");
+        if (vaegtklasse && bmi < 19) {
+            alert("Undervægtig");
+        } else if (vaegtklasse && bmi > 19 && bmi < 25) {
+            alert("Normal");
+        } else if (vaegtklasse && bmi > 25 && bmi < 30) {
+            alert("Overvægtig");
+        } else if (vaegtklasse && bmi > 30 && bmi < 35) {
+            alert("Fed");
+        } else if (vaegtklasse && bmi > 35 && bmi < 40) {
+            alert("Svær fedme");
+        } else if (vaegtklasse && bmi > 40) {
+            alert("Ekstremt fed");
+        } else if (bmi != Number(bmi)) {
+            alert("Kan ikke regne ud.");
+        }
+    </script>
+</body>
+
+</html>
