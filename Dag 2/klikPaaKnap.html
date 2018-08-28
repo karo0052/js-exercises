@@ -41,11 +41,11 @@
 
     <script>
         const KLIK = document.querySelector("#klik");
-        const TEKST = document.querySelector("#box");
+        const BOX = document.querySelector("#box");
         const SLET = document.querySelector("#slet");
         const HTML = document.querySelector("#html");
         const FLYT = document.querySelector("#flyt");
-        const FLYTTEKST = document.querySelector("#bax");
+        const BAX = document.querySelector("#bax");
 
 
 
@@ -53,19 +53,19 @@
         KLIK.addEventListener("click", visTekst);
 
         function visTekst() {
-            TEKST.textContent = "KLIK";
+            BOX.textContent = "KLIK";
         }
 
         SLET.addEventListener("click", sletTekst);
 
         function sletTekst() {
-            TEKST.textContent = "";
+            BOX.textContent = "";
         }
 
         HTML.addEventListener("click", visHTML);
 
         function visHTML() {
-            TEKST.innerHTML = "<h1>Overskrift</h1> <p>Tekst</p>";
+            BOX.innerHTML = "<h1>Overskrift</h1> <p>Tekst</p>";
         }
 
 
@@ -74,10 +74,11 @@
 
         function flytTekst() {
 
-            let indhold = TEKST.innerHTML;
+            let indhold = BOX.innerHTML;
+
             console.log(indhold);
-            FLYTTEKST.innerHTML = indhold;
-            TEKST.textContent = "";
+            BAX.innerHTML = indhold;
+            BOX.textContent = "";
         }
     </script>
 </body>
