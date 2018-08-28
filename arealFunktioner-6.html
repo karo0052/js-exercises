@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areal funktioner-6</title>
+
+</head>
+
+<body>
+    <script>
+        //    function arealBeregning() {
+        //
+        //    }
+
+        function arealBeregning(l, w) {
+            //hvis l og w eer tal
+            if (Number(l) && Number(w)) {
+                //returner areal besked
+                return "Areal: " + l + w "kvadratmeter.";
+            } else {
+                return "Kan ikke regne det ud."
+            }
+        }
+        //Arealberegning slut
+        function brugerKontakt() {
+            let laengde = prompt("Angiv en længde?");
+            let bredde = prompt("Angiv en bredde?");
+            let besked = arealBeregning(laengde, bredde);
+            alert(besked);
+            if (confirm("Vil du starte forfra?")) {
+                brugerKontakt();
+            }
+        }
+        // Istedet for at starte programmet forfra, så kaldes funktionen forfra. Bruger færre ressourcer.
+        brugerKontakt();
+    </script>
+</body>
+</html>
